@@ -390,15 +390,6 @@ SimplexNoise.prototype = {
 
 };
 
-// amd
-if (typeof define !== 'undefined' && define.amd) define(function(){return SimplexNoise;});
-//common js
-if (typeof exports !== 'undefined') exports.SimplexNoise = SimplexNoise;
-// browser
-else if (typeof navigator !== 'undefined') this.SimplexNoise = SimplexNoise;
-// nodejs
-if (typeof module !== 'undefined') {
-    module.exports = SimplexNoise;
-}
+window.SimplexNoise = SimplexNoise;
 
 })();
